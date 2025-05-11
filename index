@@ -23,7 +23,7 @@ export default function App() {
 
   // Define consistent colors for each shell type
   const shellColors = {
-    "Inner Shell": ["#1FF01Fce93d8", "#9c27b0"], // Green for inner shell
+    "Inner Shell": ["#4caf50", "#a5d6a7"], // Green for inner shell
     "Middle Shell": ["#7b1fa2", "#ab47bc"], // Purple for middle shell
     "Outer Shell": ["#1976d2", "#42a5f5"], // Blue for outer shell
   };
@@ -1243,67 +1243,7 @@ export default function App() {
           padding: "20px",
           backgroundColor: "#f9f9f9",
         }}
-      >
-        <h3
-          style={{ fontSize: "16px", fontWeight: "bold", marginBottom: "10px" }}
-        >
-          Understanding Shell-Based Ionization
-        </h3>
-        <p style={{ marginBottom: "10px" }}>
-          The energy required to remove electrons varies based on which shell
-          they're in:
-        </p>
-        <ul
-          style={{
-            listStyleType: "disc",
-            paddingLeft: "20px",
-            marginBottom: "10px",
-          }}
-        >
-          <li>
-            <span
-              style={{
-                color: shellColors["Outer Shell"][0],
-                fontWeight: "bold",
-              }}
-            >
-              Outer shell electrons
-            </span>{" "}
-            require the least energy (usually a few hundred kJ/mol)
-          </li>
-          <li>
-            <span
-              style={{
-                color: shellColors["Middle Shell"][0],
-                fontWeight: "bold",
-              }}
-            >
-              Middle shell electrons
-            </span>{" "}
-            require significantly more energy (several thousand kJ/mol)
-          </li>
-          <li>
-            <span
-              style={{
-                color: shellColors["Inner Shell"][0],
-                fontWeight: "bold",
-              }}
-            >
-              Inner shell electrons
-            </span>{" "}
-            require enormous energy (tens of thousands of kJ/mol)
-          </li>
-          <li>
-            For each shell, removing additional electrons requires progressively
-            more energy
-          </li>
-        </ul>
-        <p>
-          This simulation lets you experience how ionization energy increases
-          dramatically as you remove electrons from inner shells, or as you
-          remove multiple electrons from the same shell.
-        </p>
-      </div>
+      ></div>
     </div>
   );
 }
